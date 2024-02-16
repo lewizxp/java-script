@@ -7,16 +7,20 @@
     <style>
         body{
             font-size: 1.5em;
+            .nome{
+                
+            }
         }
     </style>
 </head>
 <body>
 
   <script>
- var nome = window.prompt("Digite seu nome: ")
- document.write(` Olá, ${nome}! seu nome tem ${nome.length} esse número de letras </br>`)
- document.write(`Seu ${nome} fica assim em maiúsculas ${nome.toUpperCase()} </br>`)
- document.write(`Seu ${nome} fica assim em minusculas ${nome.toLowerCase()}`)
+var nome = window.prompt("Digite seu nome? ")
+document.write(`Seu nome tem ${nome.length} letras . <br/>`)
+document.write(` Seu nome em maiúsculo é ${nome.toUpperCase()} <br/>`)
+document.write(`Seu nome em minúsculas é ${nome.toLowerCase()} `)
+
 
   </script>  
 </body>
