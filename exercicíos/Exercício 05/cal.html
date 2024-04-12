@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+</head>
+<body>
+    <h1>divisão</h1>
+    <input type="number" name="ttn1" id="ttn1">
+    <input type="number" name="ttn2" id="ttn2">
+    <input type="button" value="divisão" onclick="divisão()">
+    <div id="res">Resultado</div>
+
+
+
+
+    <script>
+        function divisão(){
+
+        let ttn1 = window.document.getElementById ("ttn1")
+        let ttn2 = window.document.getElementById ("ttn2")
+        let res = window.document.getElementById ("res")
+        n1 = Number (ttn1.value)
+        n2 = Number ( ttn2.value)
+        d = n1 / n2
+        res.innerHTML = ` divisão de ${n1} e ${n2} da: ${d}`
+        }
+
+    </script>
+</body>
+</html>

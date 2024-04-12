@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudando java</title>
+    <style>
+
+        body{
+            background:rgb(157, 178, 218) ;
+            color: white;
+            font: norml 18pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="ttf">
+        Iniciando os exercícios de DOM</h1>
+        <p>aqui vi o resultdo</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+        <p>bor bill</p>
+        <div id="ssg">Clique em mim</div>
+
+
+        <script>
+
+  
+     let ssg = window.document.getElementById ("ssg")
+     document.write ("Está é a certa "+ ssg.innerText)
+     ssg.style.color = "black"
+     ssg.innerText = "Olá, jaavaa"
+     let p3 = window.document.getElementsByTagName("p")[1]
+     p3.innerText = ("CR7")
+     p3.style.background = ("darkgray")
+     let p4 = window.document.getElementsByTagName ("p")[2]
+     p4.style.color= ("red")
+     let p6 = window.document.getElementById ("ttf")
+     p6.innerText = ("chama no daale")
+    
+
+
+
+        </script>
+
+    
+</body>
+</html>

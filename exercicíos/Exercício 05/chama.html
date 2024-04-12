@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventuo DOM</title>
+    <style>
+        body{
+            background-color: darksalmon;
+    
+    
+        }
+        input{
+            font: normal 18pt Arial  ;
+        }
+        #res{ 
+           
+            border: 2px solid rgba(0, 0, 0, 0.102);
+            width: 30vh;
+            padding:9px ;
+            margin-top:10px ;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+
+    <Script>
+        function somar(){
+            let tn1 = window.document.getElementById("txtn1")
+            let tn2 = window.document.getElementById("txtn2")
+            let res = window.document.getElementById("res")
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let s = n1 + n2
+            res.innerHTML = `a soma de ${n1} + ${n2} da: ${s}`
+        }
+        
+        
+
+        
+    </Script>
+</body>
+</html>
